@@ -1,0 +1,58 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+body {
+    background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)),
+        url('../images/5.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.container {
+    padding-top: 30px;
+    hr {
+        padding: 1px 0;
+    }
+    .row {
+        .box {
+            background-color: #fff;
+            padding: 20px 10px 25px 10px;
+            border-radius: 6px;
+            label {
+                font-size: 15px;
+                color: #0000009a;
+                padding-bottom: 4px;
+            }
+            .count-item {
+                padding-top: 20px;
+                width: 90%;
+                display: block;
+                margin: auto;
+                &:first-child() {
+                    padding-top: 0;
+                }
+                input {
+                    height: 45px;
+                }
+            }
+            #btn-create {
+                width: 90%;
+                display: block;
+                margin: 30px auto 0 auto;
+            }
+            #names {
+                margin-top: 30px;
+                max-height: 400px;
+                overflow-y: scroll;
+                ul {
+                    li {
+                        list-style: disc;
+                        font-size: 16px;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
